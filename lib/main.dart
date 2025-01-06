@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:veggie_vibes/models/vegetables_shop.dart';
 import 'package:veggie_vibes/pages/home_page.dart';
+import 'package:veggie_vibes/pages/login_page.dart';
+import 'package:veggie_vibes/pages/sign_up_page.dart';
 import 'package:veggie_vibes/pages/splash_screen.dart';
 
 void main() {
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Poppins', // Set default font
         ),
         debugShowCheckedModeBanner: false,
-        home: const SplashScreenHandler(),
+        home: const SignupPage(),//replace with splashScreenHandler
       ),
     );
   }
