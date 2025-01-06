@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:veggie_vibes/components/veggie_tile.dart';
@@ -13,6 +12,17 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage> {
+  void addToCart(Vegetables vegetables) {
+    Provider.of<VegetablesShop>(context, listen: false)
+        .addItemToCart(vegetables);
+
+    showDialog(
+        context: context,
+        builder: (context) => const AlertDialog(
+              title: Text("Successfully added to the cart!", style: TextStyle(fontSize: 15),),
+            ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<VegetablesShop>(
@@ -41,7 +51,11 @@ class _ShopPageState extends State<ShopPage> {
 
                               //return tile
 
-                              return VeggieTile(vegetables: eachVeggie);
+                              return VeggieTile(
+                                vegetables: eachVeggie,
+                                onPressed: () => addToCart(eachVeggie),
+                                Icon: const Icon(Icons.add),
+                              );
                             }))
                   ],
                 ),
