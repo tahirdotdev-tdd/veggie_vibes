@@ -3,6 +3,9 @@ allprojects {
         google()
         mavenCentral()
     }
+
+    // Add this line to access the Google Services plugin
+    classpath 'com.google.gms:google-services:4.4.2' // Or latest version
 }
 
 rootProject.buildDir = "../build"

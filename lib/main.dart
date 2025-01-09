@@ -1,14 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:veggie_vibes/models/vegetables_shop.dart';
 import 'package:veggie_vibes/pages/home_page.dart';
-import 'package:veggie_vibes/pages/login_page.dart';
 import 'package:veggie_vibes/pages/sign_up_page.dart';
 import 'package:veggie_vibes/pages/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase with the options for web
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

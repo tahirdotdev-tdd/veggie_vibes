@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "207875250098",
+    "project_id": "veggie-vibes-a58fd",
+    "storage_bucket": "veggie-vibes-a58fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207875250098:android:a0b0ee5efc12c5b27c76ab",
+        "android_client_info": {
+          "package_name": "com.example.veggie_vibes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-6ScyZwPcD-g8t7NGnROIRv1hNjz298g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

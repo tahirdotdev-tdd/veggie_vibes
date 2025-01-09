@@ -14,6 +14,7 @@ class SignupPage extends StatefulWidget {
 class _SignupPageState extends State<SignupPage> {
   bool _isPasswordVisible = false;
   final _emailController = TextEditingController();
+  final _nameController = TextEditingController();
   final _passwordController = TextEditingController();
 
   @override
@@ -47,7 +48,7 @@ class _SignupPageState extends State<SignupPage> {
                       width: MediaQuery.of(context).size.width *
                           0.6, // 60% of the screen width
                       child: TextField(
-                        controller: _emailController,
+                        controller: _nameController,
                         decoration: const InputDecoration(labelText: 'Name'),
                       ),
                     ),
