@@ -5,7 +5,6 @@ import 'package:veggie_vibes/models/vegetables_shop.dart';
 import 'package:veggie_vibes/pages/home_page.dart';
 import 'package:veggie_vibes/pages/sign_up_page.dart';
 import 'package:veggie_vibes/pages/splash_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 
 void main() async {
@@ -61,7 +60,7 @@ class _SplashScreenHandlerState extends State<SplashScreenHandler>
     // Create a fade-out animation
     _animation = CurvedAnimation(
       parent: _controller,
-      curve: Curves.easeInOut,
+      curve: Curves.bounceIn,
     );
 
     // Start the animation
